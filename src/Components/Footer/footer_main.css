@@ -1,0 +1,95 @@
+/*declaring color variables*/
+:root {
+  --footer-bg: #080056;
+  --greyBlue: #675ee9;
+}
+
+/*footer parent div*/
+.footer_parent {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--footer-bg);
+  color: white;
+  padding: 3rem 0;
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+.footer_title {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+}
+
+/*footer text box*/
+.footer_email {
+  width: 35rem;
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.footer_text {
+  border: 2px solid #665fe6;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  flex-grow: 2;
+  margin: 0 2rem;
+  caret-color: #665fe6;
+  color: #665fe6;
+  padding: 0 1rem;
+}
+
+.footer_text::placeholder {
+  color: #9890ff;
+  text-align: center;
+}
+
+.footer_btn {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 0.5rem;
+  background-color: var(--greyBlue);
+  color: white;
+  margin: 0 2rem;
+  transition: 0.4s ease-in-out transform;
+}
+
+.footer_btn:active {
+  transform: translateY(3px);
+}
+
+.footer_btn:hover {
+  cursor: pointer;
+}
+
+.footer_design {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  z-index: 0;
+}
+
+.footer_icons {
+  left: 100px;
+  width: 8rem;
+  bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.footer_title p {
+  color: #9890ff;
+}
+
+.footer_title h1 {
+  font-size: 3rem;
+  line-height: 1.5;
+}
