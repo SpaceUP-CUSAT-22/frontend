@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+.about_parent {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  font-family: Quicksand;
+  background-image: url("../../Assets/star.png");
+}
+
+.about_text {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.about_text h1 {
+  font-size: 4rem;
+  color: #19185a;
+  padding-bottom: 1rem;
+}
+
+.about_text p {
+  font-size: 2rem;
+  color: #271658;
+  padding: 2rem 12rem;
+  font-weight: 700;
+}
