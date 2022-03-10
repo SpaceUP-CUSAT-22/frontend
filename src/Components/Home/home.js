@@ -6,10 +6,8 @@ import home_curve from "../../Assets/home_curve.svg";
 export default function Home() {
   return (
     <div className="home_parent">
-      <img src={home_curve} className="home_curve" alt="home_curve" />
+      <img src={home_curve} className="home_curve" alt="" />
       <div className="home__left">
-        
-
         <div className="home__text">
           <h1 className="home-title">Lorem Ipsum is simply dummy text</h1>
 
