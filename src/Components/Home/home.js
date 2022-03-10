@@ -1,12 +1,14 @@
 import React from "react";
 import "./home.css";
-import spaceup_logo from "../../Assets/space_up_logo_1.svg";
+
+import home_curve from "../../Assets/home_curve.svg";
 
 export default function Home() {
   return (
-    <div className="wrapper">
+    <div className="home_parent">
+      <img src={home_curve} className="home_curve" alt="home_curve" />
       <div className="home__left">
-        <img src={spaceup_logo} className="home-logo" />
+        
 
         <div className="home__text">
           <h1 className="home-title">Lorem Ipsum is simply dummy text</h1>
