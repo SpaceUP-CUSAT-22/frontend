@@ -5,12 +5,12 @@
 
   position: relative;
   font-family: Quicksand;
-  background-image: url("../../Assets/star.png");
 }
 
 .about_text {
   padding: 4rem 0;
   text-align: center;
+  background-image: url("../../Assets/star.png");
 }
 
 .about_text h1 {
@@ -24,4 +24,8 @@
   color: #271658;
   padding: 2rem 12rem;
   font-weight: 700;
+}
+
+.carousel {
+  padding: 2rem 3rem;
 }

@@ -8,8 +8,6 @@ const Footer = () => {
   return (
     <footer className="footer_parent">
       <div className="footer_title">
-        <h1>SpaceUP</h1>
-        <h1>Cusat</h1>
         <p>Contact us by mail</p>
       </div>
 

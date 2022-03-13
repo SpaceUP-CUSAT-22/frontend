@@ -1,5 +1,28 @@
 import "./About.css";
 
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
+
 const About = () => {
   return (
     <div className="about_parent">
@@ -18,6 +41,38 @@ const About = () => {
           dependent on the stars falling in the night sky. We bring to you our
           unconference SPACEUP CUSAT 2022.
         </p>
+      </div>
+      <div className="carousel">
+        <Carousel responsive={responsive}>
+          <div>
+            <img
+              className="d-block w-100"
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2-300x115.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="d-block w-100"
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="d-block w-100"
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              className="d-block w-100"
+              src="https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"
+              alt=""
+            />
+          </div>
+        </Carousel>
       </div>
     </div>
   );

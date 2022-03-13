@@ -26,7 +26,7 @@
 /*footer text box*/
 .footer_email {
   width: 35rem;
-  padding: 5rem 2rem;
+  padding: 2rem 2rem;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
@@ -86,10 +86,6 @@
 }
 
 .footer_title p {
+  padding-top: 3rem;
   color: #9890ff;
-}
-
-.footer_title h1 {
-  font-size: 3rem;
-  line-height: 1.5;
 }
