@@ -21,7 +21,7 @@
 }
 
 .nav-links {
-    width: 735px;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,3 +32,29 @@
     color: white;
     list-style: none;
 }
+
+@media screen and (max-width: 1180px) {
+    .navbar-parent {
+        height: 6rem;
+    }
+
+    .nav-logo{
+        margin-left: 3rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .navbar-parent {
+        height: 4.8rem;
+    }
+
+    .nav-logo{
+        margin-left: 1.5rem;
+    }
+
+}
+    

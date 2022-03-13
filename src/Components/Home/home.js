@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <div className="home_parent">
       <img src={home_curve} className="home_curve" alt="" />
+      <div className="home_bg"></div>
       <div className="home__left">
         <div className="home__text">
           <h1 className="home-title">Lorem Ipsum is simply dummy text</h1>

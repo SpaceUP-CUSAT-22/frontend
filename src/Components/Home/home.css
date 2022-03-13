@@ -1,5 +1,6 @@
 :root {
     --min-height: 620px; 
+    --max-height: 640px;
 }
 .home_parent{
     display: flex;
@@ -8,18 +9,16 @@
     width: 100%;
     background: #130C31;
     z-index: -1;
-    
 }
 
 .home__left{
-display: flex;
-flex-direction: column;
-padding: 6rem;
-flex: 0.3;
-text-align: left;
-justify-content: center;
-z-index: 1;
-background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    flex: 0.3;
+    text-align: left;
+    justify-content: center;
+    z-index: 1;
 }
 
 .home-title {
@@ -58,7 +57,44 @@ background-color: white;
     position: absolute;
     left: 10%;
     z-index: 0;
-    width: 1180px;
+    width: 72%; /**/
     height: 100vh;
     min-height: var(--min-height);
 }
+
+.home_bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    min-height: var(--min-height);
+    z-index: 0;
+    background-color: white;
+}
+
+@media screen and (max-width: 1320px) {
+
+  .home_curve {
+    width:  82%;
+  }
+
+}
+
+
+@media screen and (max-width: 1180px) {
+  .home_parent {
+    max-height: var(--max-height);
+  }
+  .home__left {
+    padding: 3rem;
+  }
+
+  .home_curve {
+    width:  94%;
+    left: 5%;
+    max-height: var(--max-height);
+  }
+
+}
+  
