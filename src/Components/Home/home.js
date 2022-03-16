@@ -7,7 +7,7 @@ import person from "../../Assets/spaceup_illustration_person.svg";
 import pot from "../../Assets/spaceup_illustration_pot.svg";
 import satellite from "../../Assets/spaceup_illustration_satellite.svg";
 import tea from "../../Assets/spaceup_illustration_tea.svg"; */
-//import home_layout from "../../Assets/spaceup_illustration.svg";
+import home_layout from "../../Assets/spaceup_illustration.svg";
 import home_curve from "../../Assets/home_curve.svg";
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
       </div>
 
       <div className="home__right">
-        {/*<img  src={home_layout} className="home_layout" alt="" />*/}
+        <img  src={home_layout} className="home_layout" alt="" />
         {/*<img src={astronaut} className="home__astronaut" alt="" />
         <img src={person} className="home__person" alt="" />
         <img src={pot} className="home__pot" alt="" />
