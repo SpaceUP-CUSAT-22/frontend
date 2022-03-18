@@ -1,6 +1,8 @@
 import React from "react";
 import "./home.css";
 import "./home_anim.css";
+import "animate.css";
+
 /* import astronaut from "../../Assets/spaceup_illustration_astronaut.svg";
 import computer from "../../Assets/spaceup_illustration_computer.svg";
 import person from "../../Assets/spaceup_illustration_person.svg";
@@ -17,15 +19,15 @@ export default function Home() {
       <div className="home_bg"></div>
       <div className="home__left">
         <div className="home__text">
-          <h1 className="home-title">Lorem Ipsum is simply dummy text</h1>
+          <h1 className="home-title animate__animated animate__slideInUp">Lorem Ipsum is simply dummy text</h1>
 
-          <p className="home-description">
+          <p className="home-description animate__animated animate__slideInLeft">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.Lorem Ipsum is simply dummy text Lorem Ipsum is simply
             dummy text of the printing{" "}
           </p>
 
-          <button className="home-button">Register Now</button>
+          <button className="home-button custom_pop">Register Now</button>
         </div>
       </div>
 

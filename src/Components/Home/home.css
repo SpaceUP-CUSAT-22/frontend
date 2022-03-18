@@ -73,6 +73,28 @@
     background-color: white;
 }
 
+.custom_pop {
+  animation: pop;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  backface-visibility: hidden;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(1.0);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+
+  100% {
+    transform: scale(1.0);
+  }
+}
+
 @media screen and (max-width: 1320px) {
 
   .home_curve {
