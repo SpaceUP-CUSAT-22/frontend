@@ -23,6 +23,15 @@ const responsive = {
   },
 };
 
+const carousel_src = [
+  "https://picsum.photos/650/300",
+  "https://picsum.photos/650/300",
+  "https://picsum.photos/650/300",
+  "https://picsum.photos/650/300",
+  "https://picsum.photos/650/300",
+  "https://picsum.photos/650/300",
+]
+
 const About = () => {
   return (
     <div className="about_parent">
@@ -33,10 +42,19 @@ const About = () => {
         </p>
       </div>
       <div className="carousel">
-        <Carousel responsive={responsive}>
-          <Slide source={"https://media.geeksforgeeks.org/wp-content/uploads/20210425122739/2-300x115.png"}/>
-          <Slide source={"https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"}/>
-          <Slide source={"https://media.geeksforgeeks.org/wp-content/uploads/20210425122716/1-300x115.png"}/>
+        <Carousel 
+        autoPlay={true}
+          swipeable={false}
+          responsive={responsive}
+          infinite={true}
+          autoPlaySpeed={2000}
+          transitionDuration={500}
+          // centerMode={true}
+          focusOnSelect={true}
+        >
+          {carousel_src.map((source) => (
+            <Slide className="slide_item" source={source}/>
+          ))}
         </Carousel>
       </div>
     </div>
