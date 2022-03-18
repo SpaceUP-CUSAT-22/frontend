@@ -30,7 +30,7 @@ export default function Home() {
       </div>
 
       <div className="home__right">
-        <img  src={home_layout} className="home_layout" alt="" />
+        <img src={home_layout} className="home_layout" alt="" />
         {/*<img src={astronaut} className="home__astronaut" alt="" />
         <img src={person} className="home__person" alt="" />
         <img src={pot} className="home__pot" alt="" />

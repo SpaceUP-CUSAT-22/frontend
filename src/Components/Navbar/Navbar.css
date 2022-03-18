@@ -31,6 +31,7 @@
 .nav-links > * {
     color: white;
     list-style: none;
+    z-index: 1;
 }
 
 @media screen and (max-width: 1180px) {
